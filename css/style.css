@@ -1,0 +1,24 @@
+﻿body { font-family: Arial, Helvetica, sans-serif; padding: 20px; background:#fff; }
+.container{ max-width:1100px; margin:0 auto; padding:0 12px; }
+
+.section-title{ font-size:22px; margin-bottom:15px; }
+.cards-grid{ display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin-bottom:40px; }
+.card-item{ background:#fff; border-radius:8px; padding:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); text-align:center; }
+.card-item img{ width:100%; height:120px; object-fit:cover; border-radius:6px; }
+
+@media (min-width:1400px){ .cards-grid{ grid-template-columns: repeat(7, 1fr); } }
+
+.carousel .d-block{ height:250px; object-fit:cover; }
+
+.cards-container { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px; }
+.card { min-width: 270px; cursor: pointer; }
+.img-box img { width: 100%; height: 180px; object-fit: cover; border-radius: 15px; }
+.tag { position: absolute; top: 10px; left: 10px; background: white; padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: bold; }
+.heart { position: absolute; top: 12px; right: 12px; background: white; border: none; padding: 5px 8px; border-radius: 50%; font-size: 16px; cursor: pointer; }
+.title { margin: 8px 0 3px; font-size: 16px; font-weight: bold; }
+.price { font-size: 14px; color: #555; }
+
+@media (max-width: 600px) {
+    .card { min-width: 200px; }
+    .img-box img { height: 150px; }
+}
